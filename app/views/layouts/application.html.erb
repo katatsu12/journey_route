@@ -11,7 +11,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="text-dark-base bg-dark-fill font-mono font-semibold">
     <nav><%= link_to_if current_user, 'log out', destroy_user_session_path, data: { turbo_method: :delete } %></nav>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
