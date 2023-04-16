@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <nav><%= link_to_if current_user, 'log out', destroy_user_session_path, data: { turbo_method: :delete } %></nav>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
