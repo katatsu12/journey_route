@@ -19,14 +19,11 @@ module.exports = {
       backgroundColor: {
         dark: {
           fill: 'var(--color-fill)',
-          'button-accent': 'var(--color-button-accent)',
-          'button-accent-hover': 'var(--color-button-accent-hover)',
-          'button-muted': 'var(--color-button-muted)'
+          'btn-accent': 'var(--color-button-accent)',
+          'btn-accent-hover': 'var(--color-button-accent-hover)',
+          'btn-muted': 'var(--color-button-muted)'
         }
       }
-      // fontFamily: {
-      //   sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      // },
     },
   },
   plugins: [

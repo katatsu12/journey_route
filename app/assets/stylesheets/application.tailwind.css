@@ -13,3 +13,7 @@
     --color-button-muted: #F37292;
   }
 }
+
+.btn-accent {
+  @apply bg-dark-btn-accent hover:bg-dark-btn-accent-hover text-white font-bold py-2 px-4 rounded-full cursor-pointer;
+}
