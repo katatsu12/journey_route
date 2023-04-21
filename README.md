@@ -7,3 +7,16 @@ _Project development tools:_
 - [ ] Turbo (Turbo Stream)
 - [ ] Tailwind CSS
 - [ ] Sidekiq
+
+---
+# Project database structure
+
+Day "(Day of the week)" `has_many :tasks` (datetime: timestamp)
+
+Task `belongs_to :day` (completed: boolean, completed_at: timestamp, day_id: references)
+
+User `has_many :tasks` (email: string, name: string, task_id: references)
+
+Card `has_many :tasks`
+
+Chart "(Chat room)"
