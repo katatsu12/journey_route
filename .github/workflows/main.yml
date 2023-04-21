@@ -1,4 +1,4 @@
-name: CI
+name: main
 
 on:
   push:
@@ -37,8 +37,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Copy secrets
-        run: cp config/application.yml.example config/application.yml
       - name: Setup Database
         run: bin/rails db:test:prepare
         env:
