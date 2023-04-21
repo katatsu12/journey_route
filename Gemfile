@@ -19,11 +19,19 @@ gem 'slim'
 gem 'devise'
 
 group :development, :test do
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'ffaker'
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 6.0.0'
 end
 
 group :development do
   gem 'web-console'
-  gem 'pry-rails'
 end
 
+group :test do
+  gem 'database_cleaner'
+  gem 'rails-controller-testing'
+  gem 'shoulda'
+  gem 'simplecov', require: false
+end
