@@ -17,6 +17,7 @@ gem 'tzinfo-data', platforms: %i[ mingw mswin x64_mingw jruby ]
 gem 'bootsnap', require: false
 gem 'slim'
 gem 'devise'
+gem 'anycable-rails'
 
 group :development, :test do
   gem 'factory_bot_rails'
