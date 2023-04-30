@@ -7,6 +7,7 @@ _Project development tools:_
 - [ ] Turbo (Turbo Stream)
 - [ ] Tailwind CSS
 - [ ] Sidekiq
+- [ ] AnyCabel rails integration
 
 ---
 # Project database structure
