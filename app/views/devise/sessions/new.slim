@@ -1,16 +1,3 @@
-h2 Log in
-
-= form_with model: resource, url: session_path(resource_name), data: { turbo: false } do |f|
-  .field
-    = f.label :email
-    = f.email_field :email, autofocus: true, autocomplete: 'email'
-  .field
-    = f.label :password
-    = f.password_field :password, autocomplete: 'current-password'
-  .field
-    = f.check_box :remember_me
-    = f.label :remember_me
-  .actions
-    = f.submit 'Log in', class: 'btn-accent'
+= content_tag :canvas, '', data: { controller: 'threejs' }
 
 = render 'devise/shared/links'

@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
