@@ -1,0 +1,147 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - '**/Guardfile'
+    - 'bin/*'
+    - 'out/**/*'
+    - 'vendor/**/*'
+
+  NewCops: enable
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+Layout/FirstHashElementIndentation:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 160
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Lint/EmptyBlock:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Gemfile'
+    - 'spec/**/*'
+    - 'config/**/*'
+    - 'lib/tasks/**/*'
+    - '**/*.jbuilder'
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - 'db/migrate/**/*'
+    - 'lib/tasks/**/*'
+    - 'spec/schemas/**/*'
+
+Metrics/PerceivedComplexity:
+  Max: 15
+
+Rails/ApplicationController:
+  Exclude:
+    - 'app/controllers/v1/hubspot/app_controller.rb'
+Rails/InverseOf:
+  Enabled: false
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
+
+RSpec:
+  Language:
+    ExampleGroups:
+      # Register rswag methods as proper example groups to prevent false positives (e.g., RSpec/ScatteredSetup)
+      Regular:
+        - path
+        - post
+        - put
+        - get
+        - delete
+    Includes:
+      Examples:
+        - run_test!
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 25
+
+RSpec/Focus:
+  Enabled: true
+
+RSpec/ImplicitBlockExpectation:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 15
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 10
+
+RSpec/PredicateMatcher:
+  Exclude:
+    - 'spec/services/**/*'
+
+RSpec/RepeatedExample:
+  Enabled: false
+
+RSpec/VariableName:
+  EnforcedStyle: snake_case
+  AllowedPatterns:
+    - Authorization
+    - ^ids
+
+Style/Documentation:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+  Exclude:
+    - 'app/views/**/*.jbuilder'
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/SingleLineMethods:
+  Enabled: false
