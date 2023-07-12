@@ -1,23 +1,25 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
-git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
+git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
 
-gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
-gem 'sprockets-rails'
+gem 'anycable-rails'
+gem 'bootsnap', require: false
+gem 'devise'
+gem 'importmap-rails'
+gem 'jbuilder'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
-gem 'importmap-rails'
-gem 'turbo-rails'
+gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
+gem 'redis', '~> 4.0'
+gem 'slim'
+gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'tailwindcss-rails'
-gem 'jbuilder'
-gem 'redis', '~> 4.0'
-gem 'tzinfo-data', platforms: %i[ mingw mswin x64_mingw jruby ]
-gem 'bootsnap', require: false
-gem 'slim'
-gem 'devise'
-gem 'anycable-rails'
+gem 'turbo-rails'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'factory_bot_rails'
