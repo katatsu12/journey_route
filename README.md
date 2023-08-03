@@ -21,3 +21,7 @@ User `has_many :tasks` (email: string, name: string, task_id: references)
 Card `has_many :tasks`
 
 Chart "(Chat room)"
+
+---
+refactoring:
+https://www.youtube.com/watch?v=v6mlOIaeFxg
