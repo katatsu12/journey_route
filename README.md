@@ -25,3 +25,8 @@ Chart "(Chat room)"
 ---
 refactoring:
 https://www.youtube.com/watch?v=v6mlOIaeFxg
+
+---
+<p align="center" width="100%">
+    <img width="33%" src="https://i.pinimg.com/originals/65/c5/9f/65c59f4f022efb27180e965dab632f6e.gif"> 
+</p>
